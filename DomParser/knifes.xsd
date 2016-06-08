@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified"
+    xmlns:mysp="http://ddd.com/blalbab">
+    <xs:import schemaLocation="add.xsd" namespace="http://ddd.com/blalbab"/> 
+    <xs:element name="knifes" type="knifesType"> </xs:element>
+    <xs:complexType name="knifesType">
+        <xs:sequence>
+            <xs:element name="knife" type="knifeType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>   
+    </xs:complexType>
+     <xs:complexType name="knifeType">
+         <xs:sequence>
+             <xs:element name="type" type="xs:string"></xs:element>
+             <xs:element name="hangry" type="hangryType"></xs:element>
+             <xs:element name="origin" type="xs:string"></xs:element>
+             
+             <xs:element name="visual">
+                 <xs:complexType>
+                     <xs:sequence>
+                         <xs:element name="handle" type="xs:string"></xs:element>
+                         <xs:element name="value" type="xs:boolean"></xs:element>
+                         <xs:element name="blade" type="mysp:blade"/> 
+                     </xs:sequence>
+                 </xs:complexType>
+             </xs:element>
+         </xs:sequence>
+         <xs:attribute name="id" type="xs:ID" use="required"></xs:attribute>
+     </xs:complexType>
+        <xs:simpleType name="hangryType">
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="one-hended"></xs:enumeration>
+                <xs:enumeration value="two-hended"></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+   
+</xs:schema>

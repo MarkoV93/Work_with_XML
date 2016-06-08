@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knifes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://ddd.com/blalbab knifes.xsd" 
+    xmlns:mysp= "http://ddd.com/blalbab"> 
+<knife id="k001">
+    <type>knife</type>
+    <hangry>one-hended</hangry>
+    <origin>Ukraine</origin>
+    
+    <visual>
+        <handle>oak</handle>  
+        <value>true</value>
+        <blade>
+            <mysp:lenght>15</mysp:lenght>
+            <mysp:width>3</mysp:width>
+            <mysp:material>iron</mysp:material>
+            <mysp:blood_groove>true</mysp:blood_groove>
+        </blade>     
+    </visual>
+   
+</knife>
+    <knife id="k002">
+        <type>saber</type>
+        <hangry>one-hended</hangry>
+        <origin>Ukraine</origin>
+       
+        <visual>
+            <handle>iron</handle>  
+            <value>true</value>
+            <blade>
+                <mysp:lenght>60</mysp:lenght>
+                <mysp:width>3</mysp:width>
+                <mysp:material>iron</mysp:material>
+                <mysp:blood_groove>true</mysp:blood_groove>
+            </blade>     
+        </visual>
+       
+    </knife>
+    <knife id="k003">
+        <type>dagger</type>
+        <hangry>two-hended</hangry>
+        <origin>England</origin>
+        
+        <visual>
+            <handle>oak</handle>  
+            <value>false</value>
+            <blade>
+                <mysp:lenght>20</mysp:lenght>
+                <mysp:width>4</mysp:width>
+                <mysp:material>silver</mysp:material>
+                <mysp:blood_groove>false</mysp:blood_groove>
+            </blade>            
+        </visual>
+    
+    </knife>
+</knifes>

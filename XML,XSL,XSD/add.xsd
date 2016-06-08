@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="http://ddd.com/blalbab"> 
+    <xs:complexType name="blade"> 
+        <xs:sequence> 
+            <xs:element name="lenght" type="xs:integer"></xs:element>
+            <xs:element name="width" type="xs:integer"></xs:element>
+            <xs:element name="material" type="xs:string"></xs:element>
+            <xs:element name="blood_groove" type="xs:boolean"></xs:element>
+        </xs:sequence> 
+    </xs:complexType> 
+</xs:schema>
